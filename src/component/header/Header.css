@@ -1,0 +1,27 @@
+.header{
+    background-color: rgb(138, 157, 192);
+    
+    
+   
+}
+.nav{
+    display: flex;
+    
+}
+
+.logo{
+    margin-right: 5%;
+    flex-grow: 1;
+}
+
+.art{
+    margin-top: 20px;
+    
+}
+
+.articles{
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 800px;
+    
+}

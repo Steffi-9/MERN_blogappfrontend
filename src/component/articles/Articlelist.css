@@ -1,0 +1,25 @@
+.list{
+    
+    
+    /* background-color:rgb(114, 114, 219); */
+    
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #6d63c9, #302b63, #5e5ebb);
+}
+
+.classlink{
+    text-decoration: none;
+    color: rgb(100, 10, 67);
+}
+
+.articletitle{
+    border: 2px solid saddlebrown;
+    text-align: center;
+
+}
+.buttonClass{
+    width: 100px;
+    display: inline-block;
+    margin-right: 5px;
+}

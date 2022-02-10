@@ -1,0 +1,11 @@
+.blog{
+    margin: 0;
+    padding: 0;
+    
+    /* background-color:rgb(114, 114, 219); */
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #6d63c9, #302b63, #5e5ebb);
+    
+}
