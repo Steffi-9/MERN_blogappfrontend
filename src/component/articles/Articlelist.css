@@ -1,11 +1,24 @@
 .list{
     
-    
-    /* background-color:rgb(114, 114, 219); */
-    
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #6d63c9, #302b63, #5e5ebb);
+    margin: 0;
+	padding: 0;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #847dbd, #938ecf, #24243e);
+}
+
+.listmainn{
+	width: 100%;
+	height: 500px;
+	/* background: red; */
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	border-radius: 10px;
+   
+	
 }
 
 .classlink{
@@ -15,7 +28,7 @@
 
 .articletitle{
     border: 2px solid saddlebrown;
-    text-align: center;
+    
 
 }
 .buttonClass{

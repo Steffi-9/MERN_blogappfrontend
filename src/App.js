@@ -22,7 +22,7 @@ function App() {
    }
   return (
     <Router>
-    <Header />
+    {/* <Header /> */}
     <>
      <Routes>
          <Route path='/' exact element={<Home />} />

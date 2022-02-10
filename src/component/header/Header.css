@@ -10,12 +10,13 @@
 }
 
 .logo{
-    margin-right: 5%;
+    margin-left: 2%;
     flex-grow: 1;
 }
 
 .art{
     margin-top: 20px;
+    margin-right:20px ;
     
 }
 
@@ -23,5 +24,13 @@
     text-decoration: none;
     margin-right: 10px;
     font-weight: 800px;
+    font-size: larger;
+    margin-left: 4%;
     
+
+    
+}
+
+.articles:hover{
+    color: blue;
 }

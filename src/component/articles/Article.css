@@ -1,6 +1,6 @@
 
 
-.signupbody{
+.articlesignupbody{
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -8,10 +8,10 @@
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	background: linear-gradient(to bottom, #675dbe, #302b63, #46468f);
 }
-.main{
-	width: 350px;
+.articlemain{
+	width: 1000px;
 	height: 500px;
 	background: red;
 	overflow: hidden;
@@ -32,7 +32,7 @@ label{
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
-	margin: 60px;
+	margin: 30px;
 	font-weight: bold;
 	cursor: pointer;
 	transition: .5s ease-in-out;
@@ -49,7 +49,7 @@ label{
 }
 input{
 	width: 60%;
-	height: 20px;
+	height: 40px;
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
@@ -61,8 +61,8 @@ input{
 }
 
 textarea{
-    width: 60%;
-	height: 20px;
+	width: 60%;
+	height: 60px;
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
@@ -73,8 +73,8 @@ textarea{
 	border-radius: 5px;
 
 }
-button{
-	width: 60%;
+.articlebutton{
+	width: 20%;
 	height: 40px;
 	margin: 10px auto;
 	justify-content: center;
@@ -90,7 +90,7 @@ button{
 	transition: .2s ease-in;
 	cursor: pointer;
 }
-button:hover{
+.articlebutton:hover{
 	background: #6d44b8;
 }
 .login{

@@ -7,6 +7,7 @@ import axios from 'axios';
 import Home from '../home/Home';
 import ArticleList from '../articles/ArticleList';
 import { useNavigate } from "react-router-dom";
+import Header from '../header/Header';
 
 const Login = () => {
  
@@ -35,11 +36,13 @@ const Login = () => {
 				if(result === "success")
 				{
 				setsuccess(true);
-				console.log(success);
+				// console.log(success);
+				
 			    }
 				
 				
             }
+			
         )
 		
 		
@@ -49,7 +52,7 @@ const Login = () => {
 	  useEffect(()=>{
 		if(Object.keys(formErrorValues).length === 0 && success ){
 			navigate("/articlelist", { replace: true });
-			
+			<Header success="success" />
 			//  if(success){
 			//  	navigate("/", { replace: true });
 		    //      }
@@ -66,6 +69,8 @@ const Login = () => {
 	 ,[formErrorValues,success]);
 
     return (
+		<>
+		<Header />
 		<div className='loginbody'>
 			<div className='main'>
 			{/* {Object.keys(formErrorValues).length === 0 && isSubmit ? (<Home />) :null} */}
@@ -83,6 +88,7 @@ const Login = () => {
         </div>
 
 		</div>
+		</>
         
     );
 }

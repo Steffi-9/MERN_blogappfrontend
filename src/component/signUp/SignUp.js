@@ -5,6 +5,7 @@ import './SignUp.css';
 import validation from './Validation';
 import MyForm from '../reading/Reading';
 import Home from '../home/Home';
+import Header from '../header/Header';
 
 
 const SignUp = () => {
@@ -60,7 +61,10 @@ const SignUp = () => {
              ,[formErrorValues]);
 
     return (
-     <div className='signupbody'>
+        <>
+        <Header />
+
+<div className='signupbody'>
          <div className="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true" />
         {Object.keys(formErrorValues).length === 0 && isSubmit ? (<Login />) :null}
@@ -80,7 +84,9 @@ const SignUp = () => {
 		
 	</div>
 
-     </div>  
+     </div>         
+        </>
+      
     
         
     );

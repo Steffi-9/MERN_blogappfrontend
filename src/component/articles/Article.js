@@ -4,6 +4,7 @@ import Error from '../error/Error';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import './Articlelist.css';
+import Header1 from '../header/Header1';
 
 const Article = () => {
 
@@ -61,13 +62,18 @@ const Article = () => {
        
     }
     return (
-        <div className='articletitle'>
-           <h1>The title of article is {articleData.title} </h1>
-           <p>{articleData.description}</p>
+        <>
+        <Header1 />
+         <div className='articletitle'>
+           <h1>Article title : {articleData.title} </h1>
+           <h4>Article Description: {articleData.description}</h4>
+           <p>{articleData.comment}</p>
            <button className='buttonClass' onClick={UpdateArticle}>Update</button>
            <button className='buttonClass' onClick={DeleteArticle}>Delete</button>
            
         </div>
+        </>
+       
     );
 };
 

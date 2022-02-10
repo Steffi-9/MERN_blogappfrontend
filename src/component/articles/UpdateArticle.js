@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import MyForm from '../reading/Reading';
+import Header1 from '../header/Header1';
 
 function UpdateArticle(props) {
     const {title,id} = useParams();
@@ -58,22 +59,24 @@ function UpdateArticle(props) {
 
     
     return (
+        <>
+        <Header1 />
         <div>
-           <div className='signupbody'>
-         <div className="main">  	
+           <div className='articlesignupbody'>
+         <div className="articlemain">  	
 		<input type="checkbox" id="chk" aria-hidden="true" />
         
 			<div className="signup">
 				<form onSubmit={handleSubmit} >
 					<label className='labelupdate'  aria-hidden="true">Update Article</label>
-					<input type="text" name="title" placeholder="title" required="" value={formValues.title} onChange={setFormValues} />
-                    <input type="text" name="description" placeholder="description" value={formValues.description} onChange={setFormValues}  />
+					<input type="text" name="title" placeholder="Enter title" required="" value={formValues.title} onChange={setFormValues} />
+                    <textarea row="50" col="50" type="text" name="description" placeholder="Enter description" value={formValues.description} onChange={setFormValues}  />
                     
 					
                     
-					<input type="text" name="comment" placeholder="comment" required="" value={formValues.comment} onChange={setFormValues}  />
+					<textarea row="50" col="50" type="text" name="comment" placeholder="Enter comment" required="" value={formValues.comment} onChange={setFormValues}  />
                     
-					<button >Submit</button>
+					<button className='articlebutton'>Submit</button>
 				</form>
 			</div>
 
@@ -82,6 +85,8 @@ function UpdateArticle(props) {
 
      </div>
         </div>
+        </>
+        
     );
 };
 
