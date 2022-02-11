@@ -6,9 +6,11 @@ import validation from './Validation';
 import MyForm from '../reading/Reading';
 import Home from '../home/Home';
 import Header from '../header/Header';
+import { useNavigate } from "react-router-dom";
 
 
 const SignUp = () => {
+    let navigate = useNavigate();
     
 //Storing form values
     var [formValues,setFormValues] = MyForm({username:"",email:"",password:""});
@@ -52,7 +54,8 @@ const SignUp = () => {
     useEffect(()=>{
                 if(Object.keys(formErrorValues).length === 0 && isSubmit){
                     
-                        alert("Success")
+                        alert("Success");
+                        navigate("/login", { replace: true });
                 
                   }
                 // Object.keys(formErrorValues).length === 0 && isSubmit ? (<Login />) :(<Home />)
@@ -67,7 +70,7 @@ const SignUp = () => {
 <div className='signupbody'>
          <div className="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true" />
-        {Object.keys(formErrorValues).length === 0 && isSubmit ? (<Login />) :null}
+        {/* {Object.keys(formErrorValues).length === 0 && isSubmit ? (<Login />) :null} */}
 			<div className="signup">
 				<form onSubmit={handleSignUpSubmit}>
 					<label  aria-hidden="true">Sign up</label>
